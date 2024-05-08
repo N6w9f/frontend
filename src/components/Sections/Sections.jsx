@@ -37,7 +37,7 @@ const Sections = (props) => {
               <button
                 key={page}
                 onClick={() => {
-                  window.location.search = `page=${page}`;
+                  props.state.page(page);
                 }}
                 className="fs-4 fw-bolder border-0"
               >
