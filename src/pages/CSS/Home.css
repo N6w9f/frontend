@@ -1,0 +1,37 @@
+main.home {
+  div.container-lg {
+    height: 100%;
+
+    div.text {
+      h3 {
+        img {
+          height: 80px;
+          width: 80px;
+        }
+      }
+
+      button {
+        font-weight: 500;
+
+        img {
+          width: 28px;
+        }
+      }
+    }
+
+    > img {
+      width: 36%;
+    }
+  }
+}
+section#get-exclusive-offers-on-your-email {
+  form {
+    width: fit-content;
+
+    input[type="email"] {
+      width: 300px;
+      font-size: 18px;
+      background: none;
+    }
+  }
+}

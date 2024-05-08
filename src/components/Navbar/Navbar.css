@@ -1,0 +1,111 @@
+nav {
+  height: 78px;
+
+  div.container-lg {
+    div.logo {
+      cursor: default;
+      img {
+        height: 70px;
+        width: 70px;
+      }
+    }
+
+    ul.links {
+      li {
+        a {
+          font-weight: 500 !important;
+          transition: var(--transition) !important;
+          position: relative;
+
+          &::before {
+            content: "";
+            height: 5px;
+            width: 90%;
+            background: var(--danger);
+            border-radius: 8px;
+            transition: var(--transition);
+
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+          }
+
+          &.active,
+          &:hover {
+            &::before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    div.sign-cart {
+      .cart {
+        background: none;
+        transition: var(--transition);
+      }
+    }
+
+    .menu {
+      background: none;
+    }
+
+    .links-container {
+      div.sign-cart {
+        a:first-child {
+          font-weight: 600 !important;
+        }
+      }
+    }
+    .links-container[mobile="true"] {
+      flex-direction: column;
+      align-items: end !important;
+      gap: 42px;
+      background: var(--dark);
+      justify-content: start !important;
+      position: fixed;
+      top: 0;
+      left: 100%;
+      transition: var(--transition);
+
+      > button {
+        background: none !important;
+        display: inline-block !important;
+        transition: var(--transition);
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+      ul.links {
+        flex-direction: column !important;
+
+        li a {
+          color: var(--light) !important;
+
+          &::before {
+            left: 100%;
+            transform: translateX(-100%);
+          }
+        }
+      }
+
+      div.sign-cart {
+        a:first-child {
+          color: var(--light) !important;
+          border-color: var(--light) !important;
+
+          &:hover {
+            color: var(--dark) !important;
+            background-color: var(--light) !important;
+          }
+        }
+        a:last-child {
+          color: var(--light) !important;
+        }
+      }
+    }
+  }
+}

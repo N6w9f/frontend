@@ -1,0 +1,22 @@
+section#all-products {
+  > div.container-lg {
+    div.sort {
+      h6 {
+        span {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    div.products {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    div.pages {
+      button {
+        background: none;
+      }
+    }
+  }
+}

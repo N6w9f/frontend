@@ -1,0 +1,40 @@
+main {
+  div.container-lg {
+    div.path {
+      cursor: default;
+      user-select: none;
+    }
+
+    section.product-details {
+      display: grid;
+      grid-template-columns: 130px 560px 1fr;
+      gap: 22px;
+
+      div.details {
+        /* background-color: red; */
+
+        .price {
+          p {
+            font-weight: 500 !important;
+          }
+        }
+
+        p.description {
+          font-size: 18px;
+          color: var(--gray-darker) !important;
+        }
+
+        div.sizes {
+          ul.s-m-l-xl-xxl {
+            li {
+              button[select="true"] {
+                background-color: var(--dark) !important;
+                color: var(--light);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+div#product {
+  cursor: pointer;
+  transition: var(--transition);
+
+  div.text {
+    p {
+      font-weight: 500;
+
+      span {
+        color: var(--gray-dark);
+        font-weight: 400 !important;
+      }
+    }
+  }
+  &:hover {
+    scale: 0.98;
+  }
+}

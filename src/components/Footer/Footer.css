@@ -1,0 +1,37 @@
+footer {
+  cursor: default;
+
+  > div.container-lg {
+    ul.footer-links {
+      li {
+        a {
+          font-size: 20px;
+          font-weight: 500;
+          transition: var(--transition);
+
+          &:hover {
+            color: var(--danger) !important;
+          }
+        }
+      }
+    }
+
+    ul.footer-socialmedia {
+      li {
+        a {
+          transition: var(--transition);
+
+          &:hover {
+            color: var(--gray-dark) !important;
+          }
+        }
+      }
+    }
+
+    hr {
+      border-top: 3px solid var(--gray) !important;
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}

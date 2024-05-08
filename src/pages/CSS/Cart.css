@@ -1,0 +1,78 @@
+main.cart {
+  .container-lg {
+    table {
+      tr {
+        border-bottom: 2px solid var(--gray) !important;
+      }
+
+      thead {
+        font-weight: 600;
+      }
+
+      tbody {
+        font-weight: 500;
+
+        tr {
+          td.product {
+            width: 68px;
+            img {
+              width: 58px;
+            }
+          }
+          td.quantity {
+            div {
+              button {
+                background: none;
+              }
+            }
+          }
+
+          td.remove {
+            font-size: 24px;
+            cursor: pointer;
+
+            button {
+              background: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.total-discount {
+  .cart-total {
+    flex: 1;
+    cursor: default;
+
+    > div:not(:last-child) {
+      border-bottom: 2px solid var(--gray);
+    }
+    > div {
+      font-size: 18px;
+    }
+  }
+
+  .cart-discount {
+    > p {
+      color: var(--gray-dark);
+      font-weight: 500;
+    }
+
+    form {
+      width: 300px;
+      background-color: var(--gray);
+
+      input {
+        flex: 1;
+        font-size: 22px;
+        background: none;
+
+        &::placeholder {
+          color: var(--light);
+        }
+      }
+    }
+  }
+}

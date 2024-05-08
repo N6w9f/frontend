@@ -1,0 +1,22 @@
+.lead {
+  font-weight: 400 !important;
+}
+.linear-background {
+  min-height: 350px;
+  background: linear-gradient(180deg, var(--pink) 20%, var(--light) 60%);
+}
+.linear-background-tl {
+  background: linear-gradient(90deg, #f770293d 20%, var(--light) 60%);
+}
+.special-h {
+  font-size: 80px !important;
+  font-weight: 500;
+}
+.grid-300 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+.dvh100 {
+  height: calc(100dvh - 78px) !important;
+}
